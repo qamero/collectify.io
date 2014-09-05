@@ -1,0 +1,11 @@
+{{ items }}
+
+<form action="">
+	<label for="">name:</label>
+	<input ng-model="item.name" type="text" name="name">
+
+	<label for="">category:</label>
+	<select ng-model="item.categoryId" ng-options="category.id as category.name for category in categories" name="" id=""></select>
+
+	<button ng-click="createItem(item)">create</button>
+</form>
